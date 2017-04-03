@@ -1,0 +1,10 @@
+﻿<div ng-csp ng-app="BookReview">
+    <div class="view-container" ui-view></div>
+    <div class="loader-modal" ng-if="displayLoader">
+        <div class="filler"></div><div class="vcentered">
+            <img src="/assets/images/progress.gif" />
+            <br />
+            {{loadingMsg}}
+        </div>
+    </div>
+</div>

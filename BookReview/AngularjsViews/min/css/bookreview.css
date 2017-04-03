@@ -1,0 +1,258 @@
+﻿html, body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    font-family: "Segoe UI";
+    font-size: 12px;
+}
+
+span, label {
+    display: inline-block;
+}
+
+.inline {
+    display: inline-block !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.blue {
+    color: #1160b7;
+    font-weight: 600;
+}
+
+.input-group {
+    position: relative;
+    padding: 5px 0;
+}
+
+.loader-modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    text-align: center;
+}
+
+.loader-modal .filler {
+    height: 50%;
+}
+
+.loader-modal > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.widget-content {
+    max-width: 480px;
+    margin: auto;
+}
+
+.maximized {
+    max-width: 780px;
+}
+
+.window-title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    background: #002050;
+    color: white;
+    padding-left: 15px;
+}
+
+.widget-title {
+    padding-top: 10px;
+    font-family: Segoe UI,Tahoma,Arial;
+    font-size: 21px;
+    font-weight: normal;
+    color: #1160b7;
+}
+
+.widget-content input, .widget-content select {
+    box-sizing: border-box;
+    border: 1px solid #c6c6c6;
+    width: 49%;
+    height: 20px;
+}
+
+.widget-content input {
+    padding: 1px 5px;
+}
+
+.widget-content select:disabled {
+    background: #e7e4e4;
+}
+
+.search-form label {
+    width: 49%;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+    font-weight: normal;
+}
+
+.widget-content button {
+    background-color: #002050;
+    font-family: 14px "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    height: 40px;
+    min-width: 150px;
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.widget-content button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.widget-body {
+    padding-top: 30px;
+}
+
+.matchresults {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    list-style: none;
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.matchresult {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.matchresult:hover {
+    background: #f3f1f1;
+}
+
+.matchresult.selected {
+    background: #C1CEE3;
+}
+
+.highlighted  {
+    background: #FFE099;
+}
+
+.address {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.detail-container {
+    padding: 4px;
+}
+
+.detail-label {
+    width: 135px;
+}
+
+.detail-value {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.subsection .header {
+    text-transform: uppercase;
+}
+
+.accountForm .section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.subsection {
+    border-top: 1px solid #e7e4e4;
+    margin: 5px;
+    padding: 15px 0 10px;
+}
+
+.top-border {
+    border-top: 1px solid #e7e4e4;
+}
+
+.search-button, .inProgress {
+    display: inline-block;
+    position: relative;
+    left: -25px;
+    top: 1px;
+    width: 20px;
+    height: 18px;
+    vertical-align: top;
+}
+
+.search-button
+{
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    background: url('/assets/images/search.gif') #fff;
+}
+
+.search-button:hover {
+    background-position: 0 18px;
+}
+
+.inProgress {
+    background: url('/assets/images/lookup_loader.gif') #fff no-repeat 1px !important;
+}
+
+.user_lookup {
+    background: url('/assets/images/user.gif') no-repeat 0 center;
+    padding: 1px 0 0 18px !important;
+    color: #1160b7;
+}
+
+.user_lookup:focus {
+    color: unset;
+}
+
+.lookup_results {
+    position: absolute;
+    left: 142px;
+    margin-top: 6px;
+    z-index: 999;
+    width: 48%;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid #c6c6c6;
+}
+
+.lookup_results a {
+    background: url("/assets/images/user.gif") no-repeat scroll 2px 5px;
+    cursor: pointer;
+    list-style: outside none none;
+    padding: 5px 20px;
+    display: block;
+    text-decoration: none;
+    color: unset;
+}
+
+.lookup_results a:hover, .lookup_results a:focus {
+    background-color: #f3f1f1;
+    outline: none;
+}
