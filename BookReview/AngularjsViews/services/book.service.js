@@ -10,5 +10,10 @@
         this.changeToLowerCase = function (value) {
             return value.toLowerCase();
         };
+
+        this.alertMessage = function (value) {
+            alert(value);
+        }
+
     }
 })();

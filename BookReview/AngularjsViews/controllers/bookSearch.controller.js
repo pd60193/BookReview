@@ -16,6 +16,10 @@
         self.changeCase = function () {
             self.greetingMessage = self.BookService.changeToLowerCase(self.greetingMessage);
         };
+
+        self.alertSearch = function () {
+            self.BookService.alertMessage(self.bookName);
+        };
     }
 
 })();

@@ -1,6 +1,8 @@
 ﻿<div class="widget-content" >
     <div class="widget-body">{{booksearch.greetingMessage}}</div>
+    <p><input type="text" ng-model="booksearch.bookName" placeholder="Enter book here"></p>
     <div class="text-right">
         <button ng-click="booksearch.changeCase()">Change Case</button>
+        <button ng-click="booksearch.alertSearch()">Search</button>
     </div>
 </div>
