@@ -3,6 +3,9 @@
     <p><input type="text" ng-model="booksearch.bookName" placeholder="Enter book here"></p>
     <div class="text-right">
         <button ng-click="booksearch.changeCase()">Change Case</button>
-        <button ng-click="booksearch.alertSearch()">Search</button>
+        <button ng-click="booksearch.getBookdata()">Search</button>
     </div>
 </div>
+<li ng-repeat="x in booksearch.bookList">
+    {{ x.name + '-' + x.author }}
+</li>
