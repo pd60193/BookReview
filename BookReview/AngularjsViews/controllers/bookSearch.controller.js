@@ -25,15 +25,7 @@
         self.getBookdata = function() {
             var output = self.BookService.getBookdata(self.bookName);
             output.then(function succes(response) {
-                for (var i in response.data.items)
-                {
-                    var book = {
-                        name: response.data.items[i].volumeInfo.title,
-                        authors: response.data.items[i].volumeInfo.authors
-                    };
-                    self.bookList.push(book);
-                }
-
+                self.bookList = response.data.items;
             }, function myError(response) {
                 self.bookData = "no such book";
             });
