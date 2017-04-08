@@ -242,9 +242,11 @@
   <ItemGroup>
     <Content Include="AngularjsViews\app-config.js" />
     <Content Include="AngularjsViews\app.js" />
+    <Content Include="AngularjsViews\controllers\bookDisplay.controller.js" />
     <Content Include="AngularjsViews\controllers\bookSearch.controller.js" />
     <Content Include="AngularjsViews\min\css\bookreview.css" />
     <Content Include="AngularjsViews\min\css\normalize.min.css" />
+    <Content Include="AngularjsViews\partials\partials.bookinfo.html" />
     <Content Include="AngularjsViews\partials\partials.booksearch.html" />
     <Content Include="AngularjsViews\services\book.service.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />

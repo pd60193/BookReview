@@ -7,6 +7,6 @@
     </div>
 </div>
 <li ng-repeat="x in booksearch.bookList">
-    <div>{{ x.volumeInfo.title }}</div>
+    <div ui-sref="bookinfo">{{ x.volumeInfo.title }}</div>
     <div>{{ x.volumeInfo.authors.toString() }}</div>
 </li>

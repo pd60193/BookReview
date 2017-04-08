@@ -17,6 +17,12 @@
             controller: 'BookSearchController',
             controllerAs: 'booksearch',
             templateUrl: "AngularjsViews/partials/partials.booksearch.html"
+        })
+        .state('bookinfo', {
+            url: "/bookinfo",
+            //controller: 'BookDisplayController',
+            //controllerAs: 'bookdisplay',
+            templateUrl: "AngularjsViews/partials/partials.bookinfo.html"
         });
 
         $urlRouterProvider.otherwise("/search");
