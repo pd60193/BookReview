@@ -1,12 +1,13 @@
-﻿<div class="widget-content" >
-    <div class="widget-body">{{booksearch.greetingMessage}}</div>
+﻿<div class="widget-content">
+    <div class="widget-body">Book Search</div>
     <p><input type="text" ng-model="booksearch.bookName" placeholder="Enter book here"></p>
+    <ul class="matchresults">
+        <li class="matchresult" ng-repeat="x in booksearch.bookList">
+            <div class="blue">{{ x.volumeInfo.title }}</div>
+            <div class="address">{{ x.volumeInfo.authors.toString() }}</div>
+        </li>
+    </ul>
     <div class="text-right">
-        <button ng-click="booksearch.changeCase()">Change Case</button>
         <button ng-click="booksearch.getBookdata()">Search</button>
     </div>
 </div>
-<li ng-repeat="x in booksearch.bookList">
-    <div>{{ x.volumeInfo.title }}</div>
-    <div>{{ x.volumeInfo.authors.toString() }}</div>
-</li>
