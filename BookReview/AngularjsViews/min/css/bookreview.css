@@ -256,3 +256,10 @@ span, label {
     background-color: #f3f1f1;
     outline: none;
 }
+#display_image{
+    float:left;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top:10px;
+}

@@ -1,7 +1,12 @@
 ﻿<div class="widget-content">
-    <div class="widget-body">{{bookdisplay.bookSelected.volumeInfo.title}}</div>
-    <div class="widget-body">{{bookdisplay.bookSelected.volumeInfo.authors.toString()}}</div>
-    <img src="{{bookdisplay.bookSelected.volumeInfo.imageLinks.smallThumbnail}}">
-    <div class="widget-body">{{bookdisplay.bookSelected.volumeInfo.description}}</div>
-</div>
+    <div class="widget-body">Book Information</div>
+    <img id="display_image" src="{{bookdisplay.bookSelected.volumeInfo.imageLinks.smallThumbnail}}">
+   
+    <div class="widget-title">{{bookdisplay.bookSelected.volumeInfo.title}}</div>
+    <div class="detail-container">
+        <div class="detail-value">{{bookdisplay.bookSelected.volumeInfo.authors.toString()}}</div>
+
+        <div class="detail-value">{{bookdisplay.bookSelected.volumeInfo.description}}</div>
+    </div>
+    </div>
 
