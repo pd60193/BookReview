@@ -6,6 +6,7 @@
         .service("BookService", ['$q', '$http', BookService]);
 
     function BookService($q, $http) {
+
         this.changeToLowerCase = function (value) {
             return value.toLowerCase();
         };
@@ -18,5 +19,8 @@
             return $http(obj);
         };
 
+        this.setBookSelected = function(x) {
+            this.bookSelected = x;
+        };
     };
 })();

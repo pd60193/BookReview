@@ -11,9 +11,6 @@
         var self = this;
         self.$q = $q;
         self.BookService = BookService;
-    
-
-       
 
         self.alertSearch = function () {
             alert(self.bookName);
@@ -25,6 +22,10 @@
             }, function myError(response) {
                 self.bookData = "no such book";
             });
+        };
+
+        self.setBookSelected = function (x) {
+            self.BookService.setBookSelected(x);
         };
 
      

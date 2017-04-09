@@ -20,8 +20,8 @@
         })
         .state('bookinfo', {
             url: "/bookinfo",
-            //controller: 'BookDisplayController',
-            //controllerAs: 'bookdisplay',
+            controller: 'BookDisplayController',
+            controllerAs: 'bookdisplay',
             templateUrl: "AngularjsViews/partials/partials.bookinfo.html"
         });
 

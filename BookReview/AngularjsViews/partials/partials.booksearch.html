@@ -2,8 +2,8 @@
     <div class="widget-body">Book Search</div>
     <p><input type="text" ng-model="booksearch.bookName" placeholder="Enter book here"></p>
     <ul class="matchresults">
-        <li class="matchresult" ng-repeat="x in booksearch.bookList">
-            <div class="blue">{{ x.volumeInfo.title }}</div>
+        <li ui-sref="bookinfo" class="matchresult" ng-click="booksearch.setBookSelected(x)" ng-repeat="x in booksearch.bookList">
+            <div  class="blue">{{ x.volumeInfo.title }}</div>
             <div class="address">{{ x.volumeInfo.authors.toString() }}</div>
         </li>
     </ul>
